@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64313B741489778600066907 /* FacebookStatic.m in Sources */ = {isa = PBXBuildFile; fileRef = 64313B731489778600066907 /* FacebookStatic.m */; };
+		643B5B2A1488500E001ADB3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643B5B291488500E001ADB3E /* UIKit.framework */; };
+		643B5B2C1488500E001ADB3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643B5B2B1488500E001ADB3E /* Foundation.framework */; };
+		643B5B2E1488500E001ADB3E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643B5B2D1488500E001ADB3E /* CoreGraphics.framework */; };
+		643B5B341488500E001ADB3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 643B5B321488500E001ADB3E /* InfoPlist.strings */; };
+		643B5B361488500E001ADB3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 643B5B351488500E001ADB3E /* main.m */; };
+		643B5B3A1488500E001ADB3E /* barcodeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 643B5B391488500E001ADB3E /* barcodeAppDelegate.m */; };
+		643B5B3D1488500E001ADB3E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 643B5B3B1488500E001ADB3E /* MainWindow.xib */; };
+		643B5B401488500E001ADB3E /* barcodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 643B5B3F1488500E001ADB3E /* barcodeViewController.m */; };
+		643B5B431488500E001ADB3E /* barcodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 643B5B411488500E001ADB3E /* barcodeViewController.xib */; };
+		643B5B6714885022001ADB3E /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 643B5B6114885022001ADB3E /* libzbar.a */; };
+		643B5B6814885022001ADB3E /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 643B5B6314885022001ADB3E /* zbar-back.png */; };
+		643B5B6914885022001ADB3E /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 643B5B6414885022001ADB3E /* zbar-help.html */; };
+		643B5B6A14885022001ADB3E /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 643B5B6514885022001ADB3E /* zbar-helpicons.png */; };
+		643B5B6B14885022001ADB3E /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 643B5B6614885022001ADB3E /* zbar-samples.png */; };
+		643B5B6D1488503E001ADB3E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643B5B6C1488503E001ADB3E /* AVFoundation.framework */; };
+		643B5B711488504E001ADB3E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643B5B6E1488504E001ADB3E /* CoreMedia.framework */; };
+		643B5B721488504E001ADB3E /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643B5B6F1488504E001ADB3E /* CoreVideo.framework */; };
+		643B5B731488504E001ADB3E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643B5B701488504E001ADB3E /* QuartzCore.framework */; };
+		643B5B7514885056001ADB3E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 643B5B7414885056001ADB3E /* libiconv.dylib */; };
+		643B5B961488550E001ADB3E /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 643B5B7B1488550E001ADB3E /* Facebook.m */; };
+		643B5B971488550E001ADB3E /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 643B5B7E1488550E001ADB3E /* FBDialog.bundle */; };
+		643B5B981488550E001ADB3E /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 643B5B801488550E001ADB3E /* FBDialog.m */; };
+		643B5B991488550E001ADB3E /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 643B5B821488550E001ADB3E /* FBLoginDialog.m */; };
+		643B5B9A1488550E001ADB3E /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 643B5B841488550E001ADB3E /* FBRequest.m */; };
+		643B5B9B1488550E001ADB3E /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 643B5B881488550E001ADB3E /* NSObject+SBJSON.m */; };
+		643B5B9C1488550E001ADB3E /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 643B5B8A1488550E001ADB3E /* NSString+SBJSON.m */; };
+		643B5B9D1488550E001ADB3E /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 643B5B8C1488550E001ADB3E /* SBJSON.m */; };
+		643B5B9E1488550E001ADB3E /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 643B5B8E1488550E001ADB3E /* SBJsonBase.m */; };
+		643B5B9F1488550E001ADB3E /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 643B5B901488550E001ADB3E /* SBJsonParser.m */; };
+		643B5BA01488550E001ADB3E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 643B5B921488550E001ADB3E /* SBJsonWriter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		643B5BA21488550E001ADB3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 643B5B771488550E001ADB3E /* facebook-ios-sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "facebook-ios-sdk";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		64313B721489778600066907 /* FacebookStatic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookStatic.h; sourceTree = "<group>"; };
+		64313B731489778600066907 /* FacebookStatic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookStatic.m; sourceTree = "<group>"; };
+		643B5B251488500E001ADB3E /* barcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = barcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		643B5B291488500E001ADB3E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		643B5B2B1488500E001ADB3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		643B5B2D1488500E001ADB3E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		643B5B311488500E001ADB3E /* barcode-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "barcode-Info.plist"; sourceTree = "<group>"; };
+		643B5B331488500E001ADB3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		643B5B351488500E001ADB3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		643B5B371488500E001ADB3E /* barcode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "barcode-Prefix.pch"; sourceTree = "<group>"; };
+		643B5B381488500E001ADB3E /* barcodeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = barcodeAppDelegate.h; sourceTree = "<group>"; };
+		643B5B391488500E001ADB3E /* barcodeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = barcodeAppDelegate.m; sourceTree = "<group>"; };
+		643B5B3C1488500E001ADB3E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		643B5B3E1488500E001ADB3E /* barcodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = barcodeViewController.h; sourceTree = "<group>"; };
+		643B5B3F1488500E001ADB3E /* barcodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = barcodeViewController.m; sourceTree = "<group>"; };
+		643B5B421488500E001ADB3E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/barcodeViewController.xib; sourceTree = "<group>"; };
+		643B5B4D14885022001ADB3E /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		643B5B4E14885022001ADB3E /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		643B5B4F14885022001ADB3E /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		643B5B5014885022001ADB3E /* ImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
+		643B5B5114885022001ADB3E /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		643B5B5214885022001ADB3E /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		643B5B5314885022001ADB3E /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		643B5B5414885022001ADB3E /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		643B5B5514885022001ADB3E /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		643B5B5614885022001ADB3E /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
+		643B5B5714885022001ADB3E /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
+		643B5B5814885022001ADB3E /* ZBarCaptureReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCaptureReader.h; sourceTree = "<group>"; };
+		643B5B5914885022001ADB3E /* ZBarHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
+		643B5B5A14885022001ADB3E /* ZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImage.h; sourceTree = "<group>"; };
+		643B5B5B14885022001ADB3E /* ZBarImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
+		643B5B5C14885022001ADB3E /* ZBarReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
+		643B5B5D14885022001ADB3E /* ZBarReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
+		643B5B5E14885022001ADB3E /* ZBarReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
+		643B5B5F14885022001ADB3E /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
+		643B5B6014885022001ADB3E /* ZBarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
+		643B5B6114885022001ADB3E /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
+		643B5B6314885022001ADB3E /* zbar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-back.png"; sourceTree = "<group>"; };
+		643B5B6414885022001ADB3E /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
+		643B5B6514885022001ADB3E /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
+		643B5B6614885022001ADB3E /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		643B5B6C1488503E001ADB3E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		643B5B6E1488504E001ADB3E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		643B5B6F1488504E001ADB3E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		643B5B701488504E001ADB3E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		643B5B7414885056001ADB3E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		643B5B771488550E001ADB3E /* facebook-ios-sdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "facebook-ios-sdk.xcodeproj"; sourceTree = "<group>"; };
+		643B5B7A1488550E001ADB3E /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
+		643B5B7B1488550E001ADB3E /* Facebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Facebook.m; sourceTree = "<group>"; };
+		643B5B7C1488550E001ADB3E /* facebook_ios_sdk_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = facebook_ios_sdk_Prefix.pch; sourceTree = "<group>"; };
+		643B5B7D1488550E001ADB3E /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
+		643B5B7E1488550E001ADB3E /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
+		643B5B7F1488550E001ADB3E /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDialog.h; sourceTree = "<group>"; };
+		643B5B801488550E001ADB3E /* FBDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDialog.m; sourceTree = "<group>"; };
+		643B5B811488550E001ADB3E /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginDialog.h; sourceTree = "<group>"; };
+		643B5B821488550E001ADB3E /* FBLoginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLoginDialog.m; sourceTree = "<group>"; };
+		643B5B831488550E001ADB3E /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
+		643B5B841488550E001ADB3E /* FBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRequest.m; sourceTree = "<group>"; };
+		643B5B861488550E001ADB3E /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		643B5B871488550E001ADB3E /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		643B5B881488550E001ADB3E /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		643B5B891488550E001ADB3E /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		643B5B8A1488550E001ADB3E /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		643B5B8B1488550E001ADB3E /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		643B5B8C1488550E001ADB3E /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		643B5B8D1488550E001ADB3E /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		643B5B8E1488550E001ADB3E /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		643B5B8F1488550E001ADB3E /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		643B5B901488550E001ADB3E /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		643B5B911488550E001ADB3E /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		643B5B921488550E001ADB3E /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		643B5B221488500E001ADB3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643B5B711488504E001ADB3E /* CoreMedia.framework in Frameworks */,
+				643B5B721488504E001ADB3E /* CoreVideo.framework in Frameworks */,
+				643B5B731488504E001ADB3E /* QuartzCore.framework in Frameworks */,
+				643B5B6D1488503E001ADB3E /* AVFoundation.framework in Frameworks */,
+				643B5B2A1488500E001ADB3E /* UIKit.framework in Frameworks */,
+				643B5B2C1488500E001ADB3E /* Foundation.framework in Frameworks */,
+				643B5B2E1488500E001ADB3E /* CoreGraphics.framework in Frameworks */,
+				643B5B7514885056001ADB3E /* libiconv.dylib in Frameworks */,
+				643B5B6714885022001ADB3E /* libzbar.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		643B5B1A1488500E001ADB3E = {
+			isa = PBXGroup;
+			children = (
+				643B5B761488550E001ADB3E /* src */,
+				643B5B7414885056001ADB3E /* libiconv.dylib */,
+				643B5B6E1488504E001ADB3E /* CoreMedia.framework */,
+				643B5B6F1488504E001ADB3E /* CoreVideo.framework */,
+				643B5B701488504E001ADB3E /* QuartzCore.framework */,
+				643B5B6C1488503E001ADB3E /* AVFoundation.framework */,
+				643B5B4914885022001ADB3E /* ZBarSDK */,
+				643B5B2F1488500E001ADB3E /* barcode */,
+				643B5B281488500E001ADB3E /* Frameworks */,
+				643B5B261488500E001ADB3E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		643B5B261488500E001ADB3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				643B5B251488500E001ADB3E /* barcode.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		643B5B281488500E001ADB3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				643B5B291488500E001ADB3E /* UIKit.framework */,
+				643B5B2B1488500E001ADB3E /* Foundation.framework */,
+				643B5B2D1488500E001ADB3E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		643B5B2F1488500E001ADB3E /* barcode */ = {
+			isa = PBXGroup;
+			children = (
+				643B5B381488500E001ADB3E /* barcodeAppDelegate.h */,
+				643B5B391488500E001ADB3E /* barcodeAppDelegate.m */,
+				643B5B3B1488500E001ADB3E /* MainWindow.xib */,
+				643B5B3E1488500E001ADB3E /* barcodeViewController.h */,
+				643B5B3F1488500E001ADB3E /* barcodeViewController.m */,
+				643B5B411488500E001ADB3E /* barcodeViewController.xib */,
+				643B5B301488500E001ADB3E /* Supporting Files */,
+				64313B721489778600066907 /* FacebookStatic.h */,
+				64313B731489778600066907 /* FacebookStatic.m */,
+			);
+			path = barcode;
+			sourceTree = "<group>";
+		};
+		643B5B301488500E001ADB3E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				643B5B311488500E001ADB3E /* barcode-Info.plist */,
+				643B5B321488500E001ADB3E /* InfoPlist.strings */,
+				643B5B351488500E001ADB3E /* main.m */,
+				643B5B371488500E001ADB3E /* barcode-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		643B5B4914885022001ADB3E /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				643B5B4A14885022001ADB3E /* Headers */,
+				643B5B6114885022001ADB3E /* libzbar.a */,
+				643B5B6214885022001ADB3E /* Resources */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		643B5B4A14885022001ADB3E /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				643B5B4B14885022001ADB3E /* ZBarSDK */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		643B5B4B14885022001ADB3E /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				643B5B4C14885022001ADB3E /* zbar */,
+				643B5B5614885022001ADB3E /* zbar.h */,
+				643B5B5714885022001ADB3E /* ZBarCameraSimulator.h */,
+				643B5B5814885022001ADB3E /* ZBarCaptureReader.h */,
+				643B5B5914885022001ADB3E /* ZBarHelpController.h */,
+				643B5B5A14885022001ADB3E /* ZBarImage.h */,
+				643B5B5B14885022001ADB3E /* ZBarImageScanner.h */,
+				643B5B5C14885022001ADB3E /* ZBarReaderController.h */,
+				643B5B5D14885022001ADB3E /* ZBarReaderView.h */,
+				643B5B5E14885022001ADB3E /* ZBarReaderViewController.h */,
+				643B5B5F14885022001ADB3E /* ZBarSDK.h */,
+				643B5B6014885022001ADB3E /* ZBarSymbol.h */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		643B5B4C14885022001ADB3E /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+				643B5B4D14885022001ADB3E /* Decoder.h */,
+				643B5B4E14885022001ADB3E /* Exception.h */,
+				643B5B4F14885022001ADB3E /* Image.h */,
+				643B5B5014885022001ADB3E /* ImageScanner.h */,
+				643B5B5114885022001ADB3E /* Processor.h */,
+				643B5B5214885022001ADB3E /* Scanner.h */,
+				643B5B5314885022001ADB3E /* Symbol.h */,
+				643B5B5414885022001ADB3E /* Video.h */,
+				643B5B5514885022001ADB3E /* Window.h */,
+			);
+			path = zbar;
+			sourceTree = "<group>";
+		};
+		643B5B6214885022001ADB3E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				643B5B6314885022001ADB3E /* zbar-back.png */,
+				643B5B6414885022001ADB3E /* zbar-help.html */,
+				643B5B6514885022001ADB3E /* zbar-helpicons.png */,
+				643B5B6614885022001ADB3E /* zbar-samples.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		643B5B761488550E001ADB3E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				643B5B771488550E001ADB3E /* facebook-ios-sdk.xcodeproj */,
+				643B5B7A1488550E001ADB3E /* Facebook.h */,
+				643B5B7B1488550E001ADB3E /* Facebook.m */,
+				643B5B7C1488550E001ADB3E /* facebook_ios_sdk_Prefix.pch */,
+				643B5B7D1488550E001ADB3E /* FBConnect.h */,
+				643B5B7E1488550E001ADB3E /* FBDialog.bundle */,
+				643B5B7F1488550E001ADB3E /* FBDialog.h */,
+				643B5B801488550E001ADB3E /* FBDialog.m */,
+				643B5B811488550E001ADB3E /* FBLoginDialog.h */,
+				643B5B821488550E001ADB3E /* FBLoginDialog.m */,
+				643B5B831488550E001ADB3E /* FBRequest.h */,
+				643B5B841488550E001ADB3E /* FBRequest.m */,
+				643B5B851488550E001ADB3E /* JSON */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		643B5B781488550E001ADB3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				643B5BA31488550E001ADB3E /* libfacebook_ios_sdk.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		643B5B851488550E001ADB3E /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				643B5B861488550E001ADB3E /* JSON.h */,
+				643B5B871488550E001ADB3E /* NSObject+SBJSON.h */,
+				643B5B881488550E001ADB3E /* NSObject+SBJSON.m */,
+				643B5B891488550E001ADB3E /* NSString+SBJSON.h */,
+				643B5B8A1488550E001ADB3E /* NSString+SBJSON.m */,
+				643B5B8B1488550E001ADB3E /* SBJSON.h */,
+				643B5B8C1488550E001ADB3E /* SBJSON.m */,
+				643B5B8D1488550E001ADB3E /* SBJsonBase.h */,
+				643B5B8E1488550E001ADB3E /* SBJsonBase.m */,
+				643B5B8F1488550E001ADB3E /* SBJsonParser.h */,
+				643B5B901488550E001ADB3E /* SBJsonParser.m */,
+				643B5B911488550E001ADB3E /* SBJsonWriter.h */,
+				643B5B921488550E001ADB3E /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		643B5B241488500E001ADB3E /* barcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 643B5B461488500E001ADB3E /* Build configuration list for PBXNativeTarget "barcode" */;
+			buildPhases = (
+				643B5B211488500E001ADB3E /* Sources */,
+				643B5B221488500E001ADB3E /* Frameworks */,
+				643B5B231488500E001ADB3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = barcode;
+			productName = barcode;
+			productReference = 643B5B251488500E001ADB3E /* barcode.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		643B5B1C1488500E001ADB3E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 643B5B1F1488500E001ADB3E /* Build configuration list for PBXProject "barcode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 643B5B1A1488500E001ADB3E;
+			productRefGroup = 643B5B261488500E001ADB3E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 643B5B781488550E001ADB3E /* Products */;
+					ProjectRef = 643B5B771488550E001ADB3E /* facebook-ios-sdk.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				643B5B241488500E001ADB3E /* barcode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		643B5BA31488550E001ADB3E /* libfacebook_ios_sdk.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libfacebook_ios_sdk.a;
+			remoteRef = 643B5BA21488550E001ADB3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		643B5B231488500E001ADB3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643B5B341488500E001ADB3E /* InfoPlist.strings in Resources */,
+				643B5B3D1488500E001ADB3E /* MainWindow.xib in Resources */,
+				643B5B431488500E001ADB3E /* barcodeViewController.xib in Resources */,
+				643B5B6814885022001ADB3E /* zbar-back.png in Resources */,
+				643B5B6914885022001ADB3E /* zbar-help.html in Resources */,
+				643B5B6A14885022001ADB3E /* zbar-helpicons.png in Resources */,
+				643B5B6B14885022001ADB3E /* zbar-samples.png in Resources */,
+				643B5B971488550E001ADB3E /* FBDialog.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		643B5B211488500E001ADB3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643B5B361488500E001ADB3E /* main.m in Sources */,
+				643B5B3A1488500E001ADB3E /* barcodeAppDelegate.m in Sources */,
+				643B5B401488500E001ADB3E /* barcodeViewController.m in Sources */,
+				643B5B961488550E001ADB3E /* Facebook.m in Sources */,
+				643B5B981488550E001ADB3E /* FBDialog.m in Sources */,
+				643B5B991488550E001ADB3E /* FBLoginDialog.m in Sources */,
+				643B5B9A1488550E001ADB3E /* FBRequest.m in Sources */,
+				643B5B9B1488550E001ADB3E /* NSObject+SBJSON.m in Sources */,
+				643B5B9C1488550E001ADB3E /* NSString+SBJSON.m in Sources */,
+				643B5B9D1488550E001ADB3E /* SBJSON.m in Sources */,
+				643B5B9E1488550E001ADB3E /* SBJsonBase.m in Sources */,
+				643B5B9F1488550E001ADB3E /* SBJsonParser.m in Sources */,
+				643B5BA01488550E001ADB3E /* SBJsonWriter.m in Sources */,
+				64313B741489778600066907 /* FacebookStatic.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		643B5B321488500E001ADB3E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				643B5B331488500E001ADB3E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		643B5B3B1488500E001ADB3E /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				643B5B3C1488500E001ADB3E /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		643B5B411488500E001ADB3E /* barcodeViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				643B5B421488500E001ADB3E /* en */,
+			);
+			name = barcodeViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		643B5B441488500E001ADB3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		643B5B451488500E001ADB3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		643B5B471488500E001ADB3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "barcode/barcode-Prefix.pch";
+				INFOPLIST_FILE = "barcode/barcode-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ZBarSDK\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		643B5B481488500E001ADB3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "barcode/barcode-Prefix.pch";
+				INFOPLIST_FILE = "barcode/barcode-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ZBarSDK\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		643B5B1F1488500E001ADB3E /* Build configuration list for PBXProject "barcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643B5B441488500E001ADB3E /* Debug */,
+				643B5B451488500E001ADB3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		643B5B461488500E001ADB3E /* Build configuration list for PBXNativeTarget "barcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643B5B471488500E001ADB3E /* Debug */,
+				643B5B481488500E001ADB3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 643B5B1C1488500E001ADB3E /* Project object */;
+}
