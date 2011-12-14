@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface barcodeViewController : UIViewController <ZBarReaderDelegate> {
+@interface barcodeViewController : UIViewController {
     UIImageView *resultImage;
     UITextView *resultText;
 }

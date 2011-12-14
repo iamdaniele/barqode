@@ -13,7 +13,9 @@
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
-Facebook *facebook;
+@synthesize facebook;
+
+NSString *backend_url = @"http://simple-ice-6778.herokuapp.com/action.php";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -22,8 +24,25 @@ Facebook *facebook;
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     
-    facebook = [FacebookStatic initWithAppId:@"YOUR_APP_ID" andDelegate:self];
+    facebook = [[Facebook alloc] initWithAppId:@"182118915212109" andDelegate:self];
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults objectForKey:@"FBAccessTokenKey"] 
+        && [defaults objectForKey:@"FBExpirationDateKey"]) {
+        facebook.accessToken = [defaults objectForKey:@"FBAccessTokenKey"];
+        facebook.expirationDate = [defaults objectForKey:@"FBExpirationDateKey"];
+    }
     
+    if (![facebook isSessionValid]) {
+        NSArray *permissions = [[NSArray alloc] initWithObjects:
+                                @"publish_actions", 
+                                @"offline_access", nil];
+        [facebook authorize:permissions];
+        [permissions release];
+    }
+    else {
+        NSLog(@"Session valid, logged in.");
+    }
     return YES;
 }
 
@@ -85,10 +104,78 @@ Facebook *facebook;
 }
 
 - (void)fbDidLogin {
+    NSLog(@"Did login");
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:[facebook accessToken] forKey:@"FBAccessTokenKey"];
     [defaults setObject:[facebook expirationDate] forKey:@"FBExpirationDateKey"];
     [defaults synchronize];
     
 }
+
+#pragma mark ZBar
+- (void)imagePickerController:(UIImagePickerController *)reader didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    id<NSFastEnumeration> results = [info objectForKey:ZBarReaderControllerResults];
+    ZBarSymbol *symbol = nil;
+    
+    for (symbol in results) {
+        // Just grab the first results
+        break;
+    }
+    
+    SBJSON *parser = [[SBJSON alloc] init];
+    NSMutableDictionary *data = [parser objectWithString:symbol.data];
+    
+    
+    [_viewController resultText].text = [NSString stringWithFormat:@"You spotted a %@ (%@)", 
+                       [data objectForKey:@"type"], [data objectForKey:@"_id"]];
+    NSLog([_viewController resultText].text);
+    
+    [_viewController resultImage].image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    [parser release];
+    [reader dismissModalViewControllerAnimated:YES];
+    
+    
+    NSString *object_url = [NSString stringWithFormat:@"%@?id=%@",
+                            backend_url, [data objectForKey:@"_id"]];
+    
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
+                                   object_url, [data objectForKey:@"type"],
+                                   nil];
+    
+    [facebook requestWithGraphPath:@"me/scanmefriendme:see" 
+                         andParams:params
+                     andHttpMethod:@"POST"
+                       andDelegate:self];
+        
+    //    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+    //                                   resultText.text, @"id",
+    //                                   @"touch", @"display",
+    //                                   nil];
+    //    
+    //    [[FacebookStatic instance] dialog:@"friends" andParams:params andDelegate:self];
+    
+    
+}
+
+/**
+ * Called when an error prevents the request from completing successfully.
+ */
+- (void)request:(FBRequest *)request didFailWithError:(NSError *)error
+{
+    NSLog(error);
+}
+
+/**
+ * Called when a request returns and its response has been parsed into
+ * an object.
+ *
+ * The resulting object may be a dictionary, an array, a string, or a number,
+ * depending on thee format of the API response.
+ */
+- (void)request:(FBRequest *)request didLoad:(id)result
+{
+    NSLog(result);
+}
+
 @end

@@ -40,37 +40,16 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-/* protocol */
-- (void)imagePickerController:(UIImagePickerController *)reader didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    id<NSFastEnumeration> results = [info objectForKey:ZBarReaderControllerResults];
-    ZBarSymbol *symbol = nil;
-    
-    for (symbol in results) {
-        // Just grab the first results
-        break;
-    }
-    
-    resultText.text = symbol.data;
-    resultImage.image = [info objectForKey:UIImagePickerControllerOriginalImage];
-    [reader dismissModalViewControllerAnimated:YES];
-
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                   resultText.text, @"id",
-                                   @"touch", @"display",
-                                   nil];
-    
-    [[FacebookStatic instance] dialog:@"friends" andParams:params andDelegate:self];
-
-}
-
 @synthesize resultImage, resultText;
 
 - (IBAction) scanButtonTapped
 {
+
+    barcodeViewController *appDelegate = (barcodeViewController *)[[UIApplication sharedApplication] delegate];
+
     // ADD: present a barcode reader that scans from the camera feed
     ZBarReaderViewController *reader = [ZBarReaderViewController new];
-    reader.readerDelegate = self;
+    reader.readerDelegate = appDelegate;
     reader.supportedOrientationsMask = ZBarOrientationMaskAll;
     
     ZBarImageScanner *scanner = reader.scanner;
